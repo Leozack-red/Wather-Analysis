@@ -1,1 +1,2 @@
-# Wather_Analysis
+# Wather Analysis
+The Water_Analysis class is responsible for working with data from the OpenWeatherMap climate service API. Returns a python – json object. The temperature_sensations method returns the minimum difference between the perceived and real temperature for 7 hours (00:00-06:00) and the date, taking into account time zones, an adjustment is made for 3 hours and the resources of two queries participate in the calculation, since the report for each day begins at 3:00 Moscow time. The longest_daylight method returns the maximum length of the day and the date on which this the length of the day was the maximum adjusted for the time zone. Limit on the number of requests per day: 1000. One class instance call makes 6 http requests.
